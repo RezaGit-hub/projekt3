@@ -62,7 +62,7 @@ li a{
 }
 
 button{
-    background-color: red;
+    background-color: rgb(247, 88, 88);
     padding: 0 10px;
     border-radius: 25px;
     cursor: pointer;
@@ -94,7 +94,7 @@ li:hover >a{
 }
 
 i{
-    color: red;
+    color: rgb(247, 88, 88);
     padding: 10px;
     font-size: 1.2rem;
 }
