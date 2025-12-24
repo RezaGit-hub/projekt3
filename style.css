@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    border: none;
+    direction: ltr;    
+}
+
+html{
+    background-color: #faf5f5;
+    font-size: 16px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 10px 10px lightgray;
+}
+
+h3{
+    font-size: x-large;
+    text-shadow: 0 10px 15px rgb(131, 77, 77);
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li{
+    margin: 10px;
+}
+
+li a{
+    margin-left: 15px;
+    font-size: 0.9rem;
+    color: rgb(91, 91, 91);
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-menu{
+    display: block;
+    opacity: 1;
+    visibility: hidden;
+    transition: 0.4s;
+    background-color: rgb(234, 231, 231);
+    box-shadow: 0 5px 10px lightgray;
+    position: absolute;
+    z-index: 1;
+    width: 160px;
+}
+
+.dd-item{
+    padding: 12px 15px;
+}
+
+button{
+    background-color: red;
+    padding: 0 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.4s;    
+}
+
+button i{
+    color: white;
+    font-size: 1.1rem;
+}
+
+button:hover{
+    opacity: 0.5;
+    font-size: 1.2rem;
+}
+
+li:hover >a{
+    color: #130f0f;
+    
+}
+
+.item:hover .dropdown-menu{
+    opacity: 1;
+    visibility: visible;  
+}
+
+.dd-item:hover{
+    background-color: rgb(214, 212, 212);
+}
+
+i{
+    color: red;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.open-menu , .close-menu{
+    display: block;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.close-menu{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
