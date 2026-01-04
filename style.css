@@ -111,6 +111,11 @@ i{
     right: 20px;
 }
 
+main{
+    width: 80%;
+    margin: 30px auto;
+}
+
 .sec-introduce , .sec-about{
     display: flex;
     flex-direction: column;
@@ -250,3 +255,44 @@ strong{
     align-items: center;
     justify-content: space-between;
 }
+
+footer{
+    background-color: #f8ebeb;
+    box-shadow: 0 0 30px lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+footer img{
+    width: 40px;
+    margin: 5px;
+    filter : saturate(0);
+    transition: 0.5s;
+ }
+
+ footer img:hover{
+    filter: saturate(1);
+ }
+
+ @media (min-width:750px){
+    .mainMenu{
+        display: flex;
+        height: 0;
+        flex-direction: row;
+        position: relative;
+        background-color: transparent;        
+    }
+    .close-menu, .open-menu{
+        display: none;
+    }
+    .sec-introduce{
+        flex-direction: row;
+    }
+
+    main{
+        max-width: 70%;
+    }
+ }
